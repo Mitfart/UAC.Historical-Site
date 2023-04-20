@@ -1,0 +1,55 @@
+.booking {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.booking__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.booking__header,
+.booking__main,
+.booking__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.booking__main {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+}
+.booking__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.booking__btn_order { padding: .75rem 1.75rem; }
+.booking__btn_clear { padding:  .5rem 1.25rem; }
+
+
+.booking__dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.booking__dropdown-menu {
+    width: 100%;
+    transition: 0s;
+
+    background-color: var(--bs-light);
+    border: .125rem solid var(--bs-dark);
+    border-radius: .25rem;
+}
+.booking__option {
+    cursor: pointer;
+}

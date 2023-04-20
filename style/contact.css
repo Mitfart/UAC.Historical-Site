@@ -1,0 +1,6 @@
+.contact {
+    display: flex;
+    gap: 1rem;
+}
+.contact__icon {}
+.contact__text {}

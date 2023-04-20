@@ -1,0 +1,46 @@
+.header {
+    width: 100%;
+    position: fixed;
+    background: var(--bs-light);
+    z-index: 10;
+    border-bottom: .125rem solid var(--bs-dark);
+}
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    height: 100%;
+}
+.header,
+.header__placeholder {
+    height: 5rem;
+}
+
+
+
+.header__logo {
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.header__logo:hover {
+    background: var(--bs-gray-300);
+}
+
+
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: .75em;
+    padding: .75em 1.5em;
+}
+.header__logo > svg {
+    width: 2em;
+    height: 2em;
+    margin-left: -.25em;
+}
