@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>KZ</title>
+    <title>KazHistory</title>
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -29,18 +29,17 @@
 
 </head>
 
-<!-- https://www.wix.com/ -->
-
 <body>
 <header class="header">
-    <div class="container header__content">
-        <a class="header__logo" href="https://www.wix.com/">
-            <svg fill="none"
-                 stroke="currentColor"
-                 stroke-width="1.5"
-                 viewBox="0 0 24 24"
-                 xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="logo" href="#">
+                <svg fill="none"
+                     stroke="currentColor"
+                     stroke-width="1.5"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627
                               48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41
                               60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57
                               0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902
@@ -48,38 +47,85 @@
                               0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75
                               15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378
                               55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"/>
-            </svg>
-            Some
-        </a>
-        <nav class="menu header__menu">
-            <ul class="menu__items header__items">
-                <li><a class="menu__item" href="#">Lalala</a></li>
-                <li><a class="menu__item btn" href="#">Lalala</a></li>
-            </ul>
-        </nav>
-    </div>
+                          stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                </svg>
+                KazHistory
+            </a>
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#header_menu"
+                    aria-controls="header_menu"
+                    aria-expanded="false"
+                    aria-label="Header navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="header_menu"
+                 class="navbar-collapse justify-content-end collapse">
+                <ul class="menu__items navbar-nav align-items-stretch align-items-lg-center pt-3 p-lg-0 gap-1">
+                    <li class="nav-item"><a class="menu__item" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="menu__item" href="#skills">Искусство</a></li>
+                    <li class="nav-item"><a class="menu__item" href="#events">События</a></li>
+                    <li class="nav-item"><a class="menu__item" href="#booking">Заказать билеты</a></li>
+                    <li class="nav-item">
+                        <a class="contact menu__item" href="#">
+                            <svg class="contact__icon icon"
+                                 fill="none"
+                                 stroke="currentColor"
+                                 stroke-width="1.5"
+                                 viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
+                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
+                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
+                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
+                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"/>
+                            </svg>
+                            <span class="contact__text">+7 777 777 77 77</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="menu__item btn" href="#">Войти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </header>
 <header class="header__placeholder"></header>
 
 <main class="main">
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="w-100">
             <div class="carousel carousel-dark slide h-100 d-flex"
                  data-bs-ride="carousel"
                  id="slider_about"
                  style="min-height: 75vh;">
-                <div class="carousel-inner d-flex">
-                    <div class="carousel-item active" style="background: center / cover grey;">
-                        <div class="about__content">
-                            <h1 class="about__title"> Title </h1>
-                            <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Autem distinctio dolorem eum id, quis recusandae!</p>
+                <div class="carousel-inner d-flex bg-dark">
+                    <div class="carousel-item about__slide active">
+                        <img class="about__bg" src="./img/Astana.jpg" alt="">
+                        <div class="about__content p-3">
+                            <h1 class="display-1 m-0">
+                                Узнайте больше о своей родине
+                            </h1>
                         </div>
-                        <div class="about__bg">
-                            <img src="#" alt="">
+                    </div>
+                    <div class="carousel-item about__slide">
+                        <img class="about__bg" src="./img/праздник.jpg" alt="">
+                        <div class="about__content p-3">
+                            <h1 class="display-1 m-0">
+                                Учавствуйте в мероприятиях
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="carousel-item about__slide">
+                        <img class="about__bg" src="./img/20170412201526.jpg" alt="">
+                        <div class="about__content p-3">
+                            <h1 class="display-1 m-0">
+                                Развивайтесь
+                            </h1>
                         </div>
                     </div>
                 </div>
@@ -122,84 +168,17 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="skills__content">
-                <h1 class="text-center">Народное искусство Казахстана</h1>
+            <h1 class="text-center">
+                Народное искусство Казахстана
+            </h1>
 
-                <div class="skills__items">
-
-                    <div class="skill d-none">
-                        <div class="skill__img rect bg-dark">
-                            <img alt="#" src="#">
-                        </div>
-                        <div class="skill__content">
-                            <h3 class="skill__title">skill!!</h3>
-                            <p class="skill__description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Accusamus beatae perferendis unde.
-                            </p>
-
-                            <button type="button"
-                                    class="btn skill__btn"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#skill_0">
-                                Подробнее
-                                <svg class="skill__icon"
-                                     fill="none"
-                                     stroke="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 24 24"
-                                     stroke-width="1.5">
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
-                                </svg>
-                            </button>
-
-                            <div class="modal fade"
-                                 id="skill_0"
-                                 data-bs-backdrop="static"
-                                 data-bs-keyboard="false"
-                                 tabindex="-1"
-                                 aria-labelledby="skill__label_0"
-                                 aria-hidden="true">
-                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5"
-                                                id="skill__label_0">
-                                                Modal title
-                                            </h1>
-                                            <button type="button"
-                                                    class="btn-close"
-                                                    data-bs-dismiss="modal"
-                                                    aria-label="Close">
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ...
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button"
-                                                    class="btn btn_wire"
-                                                    data-bs-dismiss="modal">
-                                                Close
-                                            </button>
-                                            <button type="button"
-                                                    class="btn">
-                                                Подробнее
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+            <div class="skills__items row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-sm-5 gy-5">
+                <div class="col">
                     <div class="skill">
                         <div class="skill__img rect bg-dark">
-                            <img alt="#" src="#">
+                            <img alt="#" src="./img/Наскальное_искусство.webp">
                         </div>
                         <div class="skill__content">
                             <h3 class="skill__title">
@@ -207,7 +186,8 @@
                             </h3>
                             <p class="skill__description">
                                 Свои истоки искусство народов Центральной
-                                Азии берет в глубокой древности, о чем свидетельствует богатый археологический материал,
+                                Азии берет в глубокой древности, о чем свидетельствует богатый археологический
+                                материал,
                                 обнаруженный на ее территории.
                             </p>
 
@@ -237,6 +217,9 @@
                                  aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
+                                        <div class="skill__img rect bg-dark">
+                                            <img alt="#" src="./img/Наскальное_искусство.webp">
+                                        </div>
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5"
                                                 id="skill__label_1">
@@ -250,12 +233,16 @@
                                         </div>
                                         <div class="modal-body">
                                             Свои истоки искусство народов Центральной
-                                            Азии берет в глубокой древности, о чем свидетельствует богатый археологический материал,
+                                            Азии берет в глубокой древности, о чем свидетельствует богатый
+                                            археологический материал,
                                             обнаруженный на ее территории. Одними из
-                                            ярчайших памятников художественного творчества древнего человека считаются наскальные изображения.
+                                            ярчайших памятников художественного творчества древнего человека
+                                            считаются наскальные изображения.
                                             Наскальными росписями наиболее богата
-                                            территория Казахстана, сохранившая 130 разных по времени (от каменного века до средневековья) комплексов петроглифов: грот на реке
-                                            Бухтарме (Восточный Казахстан), грот КотырКызылтау (Центральный Казахстан) и наибольшее скопление в Ешкиольмес, Баян-Журек,
+                                            территория Казахстана, сохранившая 130 разных по времени (от каменного
+                                            века до средневековья) комплексов петроглифов: грот на реке
+                                            Бухтарме (Восточный Казахстан), грот КотырКызылтау (Центральный
+                                            Казахстан) и наибольшее скопление в Ешкиольмес, Баян-Журек,
                                             Тамгалы, Кулжабасы, Саускандык, Арпа-Узень,
                                             Каскабулак, Кызылшын, Тектурмас (Южный
                                             Казахстан и Жетысу)
@@ -277,17 +264,20 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col">
                     <div class="skill">
                         <div class="skill__img rect bg-dark">
-                            <img alt="#" src="#">
+                            <img alt="#" src="./img/Гончарное_искусство.webp">
                         </div>
                         <div class="skill__content">
                             <h3 class="skill__title">
-                                Гончарное искусство: истоки и современность
+                                Гончарное искусство
                             </h3>
                             <p class="skill__description">
                                 Древнейшей областью материальной культуры,
-                                в которой художественное творчество проявилось наиболее полно и многообразно, является
+                                в которой художественное творчество проявилось наиболее полно и многообразно,
+                                является
                                 производство керамических изделий.
                             </p>
 
@@ -317,10 +307,13 @@
                                  aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
+                                        <div class="skill__img rect bg-dark">
+                                            <img alt="#" src="./img/Гончарное_искусство.webp">
+                                        </div>
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5"
                                                 id="skill__label_2">
-                                                Гончарное искусство: истоки и современность
+                                                Гончарное искусство
                                             </h1>
                                             <button type="button"
                                                     class="btn-close"
@@ -330,17 +323,22 @@
                                         </div>
                                         <div class="modal-body">
                                             Древнейшей областью материальной культуры,
-                                            в которой художественное творчество проявилось наиболее полно и многообразно, является
+                                            в которой художественное творчество проявилось наиболее полно и
+                                            многообразно, является
                                             производство керамических изделий. Ранние
-                                            памятники Центральной Азии (стоянки, могильники) сохранили в изобилии фрагменты
+                                            памятники Центральной Азии (стоянки, могильники) сохранили в изобилии
+                                            фрагменты
                                             керамических сосудов: керамика поселений
-                                            Анау и Намазга-Тепе Туркменистана; северной и южной (Вахшской и Бишкентской) долин
-                                            Таджикистана; керамика погребений урочиРисунок 2. «Солнцеголовое» божество и «пляшущие
+                                            Анау и Намазга-Тепе Туркменистана; северной и южной (Вахшской и
+                                            Бишкентской) долин
+                                            Таджикистана; керамика погребений урочиРисунок 2. «Солнцеголовое»
+                                            божество и «пляшущие
                                             человечки».
                                             Источник: Государственный музей-заповедник «Тамгалы».
                                             Фото автора.
                                             ща Арпа и поселений Джайылма и Каинды в
-                                            Чуйской долине Киргизстана; керамика ботайской, андроновской культур на Северо-Западе
+                                            Чуйской долине Киргизстана; керамика ботайской, андроновской культур на
+                                            Северо-Западе
                                             и в Центральном Казахстане.
                                         </div>
                                         <div class="modal-footer">
@@ -359,13 +357,15 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col">
                     <div class="skill">
                         <div class="skill__img rect bg-dark">
-                            <img alt="#" src="#">
+                            <img alt="#" src="./img/Ювелирное_искусство.jpeg">
                         </div>
                         <div class="skill__content">
                             <h3 class="skill__title">
-                                Памятники ювелирного искусства
+                                Ювелирное искусство
                             </h3>
                             <p class="skill__description">
                                 О становлении декоративно-прикладного искусства Центральной Азии свидетельствуют
@@ -399,10 +399,13 @@
                                  aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
+                                        <div class="skill__img rect bg-dark">
+                                            <img alt="#" src="./img/Ювелирное_искусство.jpeg">
+                                        </div>
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5"
                                                 id="skill__label_3">
-                                                Памятники ювелирного искусства
+                                                Ювелирное искусство
                                             </h1>
                                             <button type="button"
                                                     class="btn-close"
@@ -411,21 +414,27 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            О становлении декоративно-прикладного искусства Центральной Азии свидетельствуют
+                                            О становлении декоративно-прикладного искусства Центральной Азии
+                                            свидетельствуют
                                             и ювелирные украшения, обнаруженные во
                                             время археологических раскопок. Ювелирные
                                             украшения, возникнув на первых порах как
-                                            утилитарно-практическая или магическая необходимость («все без исключения украшения
+                                            утилитарно-практическая или магическая необходимость («все без
+                                            исключения украшения
                                             продолжительное время служили амулетами и
-                                            наделялись конкретным символическим смысловым значением»24) постепенно приобрели
+                                            наделялись конкретным символическим смысловым значением»24) постепенно
+                                            приобрели
                                             определенную художественно-эстетическую
                                             ценность.
                                             На территории Древнего Хорезма самыми
                                             ранними считаются украшения, обнаруженные
                                             на поселениях Кокча-15 (2 тыс. лет до н. э.). В
                                             женских погребениях, относящихся к периоду
-                                            IV–II в. до н. э., были найдены бронзовые височные кольца — проволочные и литые, кольца
-                                            наперстные, браслеты с разомкнутыми концами, булавки с шаровидным навершием, разнообразные бусы)25. Подлинным шедевром мелкой пластики является булавка в виде женской
+                                            IV–II в. до н. э., были найдены бронзовые височные кольца — проволочные
+                                            и литые, кольца
+                                            наперстные, браслеты с разомкнутыми концами, булавки с шаровидным
+                                            навершием, разнообразные бусы)25. Подлинным шедевром мелкой пластики
+                                            является булавка в виде женской
                                             руки, держащей гранат (или яблоко)
                                         </div>
                                         <div class="modal-footer">
@@ -444,30 +453,32 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="events">
+    <section id="events" class="events">
         <div class="container">
-            <div class="events__content">
-                <h1 class="text-center">События</h1>
-                <div class="events__items">
+            <h1 class="text-center">
+                События
+            </h1>
 
+            <div class="events__items row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gx-sm-3 gy-3">
+                <div class="col">
                     <a class="event rect" href="#">
-                        <div class="event__img bg-dark">
-                            <img alt="#" src="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/О_торговле_на_меновом_дворе.jpg">
                         </div>
                         <div class="event__content">
+                            <h6 class="event__pre-title">
+                                17.04.2023
+                            </h6>
                             <h4 class="event__title">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, officiis?
+                                О торговле на меновом дворе
                             </h4>
-                            <span class="event__btn">
-                                <span>
-                                    Заказать билет
-                                </span>
+                            <button class="event__btn">
+                                Записаться
                                 <svg class="event__icon"
                                      fill="none"
                                      stroke="currentColor"
@@ -478,16 +489,155 @@
                                           stroke-linecap="round"
                                           stroke-linejoin="round"/>
                                 </svg>
-                            </span>
+                            </button>
                         </div>
                     </a>
-
+                </div>
+                <div class="col">
+                    <a class="event rect" href="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/Трансформация_казахского_кочевого_строя_в_XVIII_веке.webp">
+                        </div>
+                        <div class="event__content">
+                            <h6 class="event__pre-title">
+                                15.03.2022
+                            </h6>
+                            <h4 class="event__title">
+                                Трансформация казахского кочевого строя в XVIII веке
+                            </h4>
+                            <button class="event__btn">
+                                Записаться
+                                <svg class="event__icon"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="event rect" href="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/Баи–жертвы_раскулачивания.jpg">
+                        </div>
+                        <div class="event__content">
+                            <h6 class="event__pre-title">
+                                21.10.2021
+                            </h6>
+                            <h4 class="event__title">
+                                Баи – жертвы раскулачивания
+                            </h4>
+                            <button class="event__btn">
+                                Записаться
+                                <svg class="event__icon"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="event rect" href="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/Алихан_Бокейханов_о_проблемах_образования.jpe">
+                        </div>
+                        <div class="event__content">
+                            <h6 class="event__pre-title">
+                                25.05.2021
+                            </h6>
+                            <h4 class="event__title">
+                                Алихан Бокейханов о проблемах образования
+                            </h4>
+                            <button class="event__btn">
+                                Записаться
+                                <svg class="event__icon"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="event rect" href="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/Следуя_урокам_Ибрая_Алтынсарин.jfif">
+                        </div>
+                        <div class="event__content">
+                            <h6 class="event__pre-title">
+                                21.10.2021
+                            </h6>
+                            <h4 class="event__title">
+                                Следуя урокам Ибрая Алтынсарина…
+                            </h4>
+                            <button class="event__btn">
+                                Записаться
+                                <svg class="event__icon"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="event rect" href="#">
+                        <div class="event__img">
+                            <img alt="#" src="./img/праздник.jpg">
+                        </div>
+                        <div class="event__content">
+                            <h6 class="event__pre-title">
+                                01.05.2023
+                            </h6>
+                            <h4 class="event__title">
+                                Добрый праздник 1 мая
+                            </h4>
+                            <button class="event__btn">
+                                Записаться
+                                <svg class="event__icon"
+                                     fill="none"
+                                     stroke="currentColor"
+                                     stroke-width="1.5"
+                                     viewBox="0 0 24 24"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="booking">
+    <section id="booking" class="booking">
         <div class="container">
             <div class="booking__content">
                 <form action="" class="booking__form">
@@ -555,17 +705,18 @@
 
 <footer class="footer">
     <div class="container">
-        <section class="footer__content">
+        <section class="pt-5">
 
-            <div class="footer__column">
-                <a class="footer__company btn" href="https://www.wix.com/">
-                    <svg class="icon footer__logo"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="1.5"
-                         viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="logo" href="#">
+                        <svg class="icon footer__logo"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.5"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627
                               48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41
                               60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57
                               0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902
@@ -573,60 +724,71 @@
                               0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75
                               15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378
                               55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    Some
-                </a>
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        KazHistory
+                    </a>
+                </div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3"></div>
+                <div class="col-lg-3 mb-3">
+                    <a class="btn contact footer__contact" href="#">
+                        <svg class="contact__icon icon"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.5"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
+                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
+                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
+                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
+                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <span class="contact__text">+7 777 777 77 77</span>
+                    </a>
+                    <a class="btn contact footer__contact" href="#">
+                        <svg class="contact__icon icon"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.5"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
+                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
+                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
+                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
+                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <span class="contact__text">+7 777 777 77 77</span>
+                    </a>
+                    <a class="btn contact footer__contact" href="#">
+                        <svg class="contact__icon icon"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="1.5"
+                             viewBox="0 0 24 24"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
+                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
+                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
+                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
+                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"/>
+                        </svg>
+                        <span class="contact__text">+7 777 777 77 77</span>
+                    </a>
+                </div>
             </div>
-
-            <section class="footer__column">
-
-                <a class="btn contact footer__contact" href="#">
-                    <svg class="contact__icon icon"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="1.5"
-                         viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
-                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
-                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
-                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
-                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    <span class="contact__text">+7 777 777 77 77</span>
-                </a>
-
-            </section>
-
-            <section class="footer__column">
-
-                <a class="btn contact footer__contact" href="#">
-                    <svg class="contact__icon icon"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="1.5"
-                         viewBox="0 0 24 24"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0
-                              002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97
-                              1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0
-                              01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963
-                              3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                    <span class="contact__text">+7 777 777 77 77</span>
-                </a>
-
-            </section>
-
         </section>
         <section class="footer__copyright">
-            @ Copyright 2020-2023 Some
+            @ Copyright 2020-2023 KazHistory
         </section>
     </div>
 </footer>

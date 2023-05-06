@@ -12,13 +12,15 @@ select,
     border-radius: .25rem;
 
     cursor: pointer;
+
+    transition: .25s ease;
 }
 
 input:hover,
-select:hover,
-.dropdown-toggle:hover,
 input:focus,
+select:hover,
 select:focus,
+.dropdown-toggle:hover,
 .dropdown-toggle:focus {
     box-shadow: 0 0 0 .5rem rgba(var(--bs-dark-rgb), .125);
 }
@@ -42,7 +44,7 @@ label {
     color: var(--bs-light);
     background-color: var(--bs-dark);
 
-    transition: inherit;
+    transition: .25s ease;
 }
 .btn:hover,
 .btn:focus {
@@ -72,11 +74,6 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
-
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 .menu__item {
     display: flex;
@@ -87,6 +84,7 @@ label {
     padding: .5rem 1.25rem;
 
     border-radius: .25rem;
+    transition: .25s ease;
 }
 .menu__item:hover {
     background: var(--bs-gray-300);

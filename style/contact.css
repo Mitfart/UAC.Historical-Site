@@ -1,6 +1,11 @@
 .contact {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: .75rem;
 }
-.contact__icon {}
+.contact__icon {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
 .contact__text {}

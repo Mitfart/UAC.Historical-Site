@@ -53,3 +53,6 @@
 .booking__option {
     cursor: pointer;
 }
+.booking__option:active {
+    background-color: var(--bs-dark);
+}
