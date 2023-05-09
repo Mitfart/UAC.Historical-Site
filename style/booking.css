@@ -52,6 +52,7 @@
 }
 .booking__option {
     cursor: pointer;
+    overflow: hidden;
 }
 .booking__option:active {
     background-color: var(--bs-dark);
