@@ -36,7 +36,6 @@ label {
 }
 
 
-
 .btn {
     padding: .5rem 1rem;
     border-radius: .25rem;
@@ -46,8 +45,10 @@ label {
 
     transition: .25s ease;
 }
+
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn:active {
     color: var(--bs-light);
     background-color: var(--bs-gray-dark);
     box-shadow: 0 0 0 .5rem rgba(var(--bs-dark-rgb), .125);
@@ -58,23 +59,26 @@ label {
     background-color: var(--bs-light);
     border: .125rem solid var(--bs-dark);
 }
+
 .btn_wire:hover,
-.btn_wire:focus {
+.btn_wire:focus,
+.btn_wire:active {
     color: var(--bs-dark);
     background-color: var(--bs-light);
     border: .125rem solid var(--bs-dark);
 }
 
 
-
 .menu {
     height: 100%;
 }
+
 .menu__items {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .menu__item {
     display: flex;
     align-items: center;
@@ -86,9 +90,11 @@ label {
     border-radius: .25rem;
     transition: .25s ease;
 }
+
 .menu__item:hover {
     background: var(--bs-gray-300);
 }
-.btn.menu__item:hover {
+
+.menu__item.btn:hover {
     background-color: var(--bs-gray-dark);
 }
